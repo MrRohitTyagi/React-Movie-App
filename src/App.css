@@ -1,0 +1,448 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: 0.5s;
+}
+
+body {
+  background-color: rgb(49, 48, 48);
+}
+
+/* //////////////////////////////             banner css   */
+
+.banner-card {
+  margin-top: 10rem;
+  width: 90.5vw;
+  position: absolute;
+  left: 4vw;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  height: 70vh;
+  position: relative;
+  flex-wrap: wrap;
+  box-shadow: 0.2px 4px 10px rgba(24, 0, 50, 1);
+
+  background-color: rgb(49, 48, 48);
+}
+
+.banner-title {
+  position: absolute;
+  top: 45vh;
+  color: turquoise;
+  left: 5vw;
+  font-size:4vw;
+  padding-right: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.banner-img {
+  border: 2px solid black;
+  height: 70vh;
+  width: 100%;
+}
+
+.banner-text {
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 55vh;
+  color: white;
+  left: 5vw;
+  right: 4vw;
+}
+/*
+                                           Movie list css */
+.catagory{
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  color: rgb(255, 253, 253);
+} 
+.CatagoryButtons{
+  border-radius: 40px;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: solid 2px white;
+}  
+.CatagoryButtons:hover{
+  transform: scale(1.1);
+  background-color: rgb(118, 99, 185);
+
+}
+.CatagoryButtons:active{
+  transform: scale(0.9);
+}                                        
+.trailor-btn{
+  align-items: center;
+  font-size: 10px;
+  padding-bottom: 2px;
+  margin-top: 1rem;
+  border: 2px solid red;
+  color: white;
+  border-radius: 50px;
+  width: 6rem;
+  height: 2rem;
+}
+
+.trailor-btn:hover{
+  background-color: rgb(226, 114, 114);
+  transform: scale(1.2);
+}
+.trailor-btn:active{
+  background-color: rgb(115, 107, 228);
+  transform: scale(0.8);
+}
+
+.movies-list {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+
+}
+.movie-card:hover .overview{
+  transform: translate(0);
+  transition-delay: 2s; 
+  transition-duration: 1s;
+  border-bottom: 2px solid pink;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+}
+                                              /* Movie card css */
+
+
+.overview{
+  z-index: 1;
+  position: absolute;
+  background-color: rgb(34, 3, 56);
+  left: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  padding: 1rem;
+  transform: translateY(-101%);
+  overflow: hidden;
+  max-height: 90% ;
+  
+}
+.movie-card {
+  margin: 1vw;
+  background-color: black;
+  width: 19rem;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0.2px 4px 10px rgba(24, 0, 50, 1);
+  overflow: hidden;
+}
+.shadow{
+  box-shadow: 0.2px 4px 10px rgb(121, 101, 209) !important;
+
+}
+
+
+.movie-button {
+  position: absolute;
+  top: 30vh;
+  left: 4rem;
+}
+
+.Movie-title {
+  color: khaki;
+  font-style: italic;
+  padding: 1vw;
+}
+
+.movie-card:hover {
+  transition-property:scale() ;
+  transform: scale(1.05);
+  border-top: white solid;
+  border-bottom: white solid;
+  background-color: rgb(34, 3, 56);
+  transition-duration: 0.5s;
+}
+
+/* .movie-card:hover  */
+.rating-button {
+  position: absolute;
+  color: yellow;
+  font-size: 5vh
+}
+                                               /* Navbar Css */
+
+
+.Mynavbar{
+  width: 90.5vw;
+  z-index: 100;
+  position: fixed;
+  border-radius: 20px;
+  display: flex;
+  background-color: rgb(28, 5, 44);
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 2vw;
+  border: 1px solid pink;
+  padding: 1vw;
+  padding-left: 5vw;
+  margin-right: 5vw;
+  opacity: 80%;
+
+
+}
+.nav-text{
+  color: white;
+  margin: 1rem;
+  display: inline-block;
+  opacity: 100%;
+  
+  
+}
+.nav-text:hover{
+  transform: scale(1.1);
+  color: bisque;
+  border: 1px pink solid;
+  border-radius: 30px;
+  padding: 0.2rem;
+}
+
+
+
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px rgb(137, 121, 192),
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px rgb(45, 136, 106);
+}
+
+                                   /* Favourites css */
+
+.genre-selector{
+  padding: 4rem;
+  cursor: pointer;
+}
+.favourites-table{
+  padding: 4rem;
+}
+
+.img{
+  height: 4rem;
+  width: 8rem;
+}
+.search-bar{
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+}
+.search-bar::placeholder{
+  color: rgb(180, 180, 180);
+}
+.search-bar:focus{
+  background-color: slateblue;
+}
+.search-bar:hover{
+  background-color: grey;
+}
+
+/* ///// My MOvIE LISt CSS ///// */
+.search{
+  display: flex;
+  padding: 3rem;
+  justify-content:flex-end;
+}
+.inp-field{
+  margin-left: 1rem;
+  border: gold solid;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+}
+.inp-field:hover{
+  background-color: rgb(26, 26, 22);
+}
+.inp-field:focus{
+  background-color: inherit;
+}
+hr{
+  color: white;
+  height: 25px;
+}
+.line{
+  background-color: white;
+  height: 2px;
+  margin-left:4vw ;
+  margin-right:4.5vw ;
+  
+
+}
+.butt{
+  color: white;
+  border: 2px solid ;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+.dd{
+  margin-right: 6vw;
+}
+.butt:hover{
+  color: white;
+  border: 2px solid white !important;
+  background-color: indigo;
+  font-weight: bold;
+}
+
+#searchtext{
+  color: white;
+  padding-left: 1rem;
+}
+
+
+/* ////////////////////////////////  Footer CSS                        /////// */
+.foot{
+  box-shadow: 0.2px 4px 10px rgba(24, 0, 350, 1);
+
+  width: auto;
+  height: 2rem;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  margin: 2rem;
+  border-radius: 50px;
+}
+.foot:hover{
+  background-color: plum ;
+  border: solid indigo 3px;
+}
+/* MORE INFO CSS */
+
+.More-info-Div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.zoom{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+.zoom:hover{
+  transform: scale(1.2);
+}
+.x{
+  /* padding: 1rem; */
+  padding-left: 7rem;
+  margin-left: 1rem;
+  width: 50vw;
+
+}
+.MYPic{
+  
+  z-index: 100;
+  top: 0rem;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 40px;
+  position: fixed;
+  left:  89vw;
+  height: 5rem;
+  width: 5rem;
+  transition: 1s;
+}
+.MYPic:hover{
+  transform: scale(2);
+  top: 7vh;
+}
+.cast-crew-nav{
+  /* margin-left: 4.5rem; */
+  margin-left: 5vw;
+  margin-top: 2.5rem;
+  height: 4rem;
+  width: 90%;
+  background-color: rgb(45, 29, 90);
+  display: flex;
+  justify-content: space-around;
+}
+.cast_heading{
+  background-color: rgb(140, 199, 233);
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid red;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+.cast_heading:hover{
+  transform: scale(1.1);
+  background-color: rgb(169, 110, 236);
+}
+.cast_heading:active{
+  transform: scale(0.9);
+  background-color: rgb(104, 187, 159);
+}
+.info-header{
+  display: flex;
+  justify-content: center;
+  
+}
+
+@media (min-width: 1024px)/*or anything else you what this to show/hide*/{
+  .respoonsive-on{
+  text-decoration: none;
+  display: block;
+  height: 10vh;
+}
+.respoonsive-off{
+  text-decoration: underline;
+  font-weight: bold;
+  display: none;
+}
+
+}
+
+@media (max-width: 1024px){
+      .respoonsive-on{
+  text-decoration: underline;
+  font-weight: bold;
+  display: none;
+}
+  .respoonsive-off{
+  display: block;
+  font-weight: normal;
+}
+}
+
+                                                       /* Iframe CSS */
+
+.iframe{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vh;
+  
+}                                                       
+
+
+
+
+
+
+
+
+
